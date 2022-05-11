@@ -1,0 +1,28 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+
+    & section {
+        display: flex;
+        margin: 1rem 0;
+        width: 80%;
+        padding: 1rem;
+        color: white;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 72px;
+        justify-content: space-evenly;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header-container {
+
+        & section {
+            width: 20em;
+        }
+    }
+}
