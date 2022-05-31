@@ -36,7 +36,37 @@ const Services = () => {
             icon: bar,
             name: 'Bar',
             desc: 'Order a refreshing or hot drink from our bartenders.'
-        }
+        },
+        {
+            icon: restaurant,
+            name: 'Restaurant',
+            desc: 'Enjoy delicious gourmet meals from £34,99'
+        },
+        {
+            icon: bar,
+            name: 'Bar',
+            desc: 'Order a refreshing or hot drink from our bartenders.'
+        },
+        {
+            icon: restaurant,
+            name: 'Restaurant',
+            desc: 'Enjoy delicious gourmet meals from £34,99'
+        },
+        {
+            icon: bar,
+            name: 'Bar',
+            desc: 'Order a refreshing or hot drink from our bartenders.'
+        },
+        {
+            icon: restaurant,
+            name: 'Restaurant',
+            desc: 'Enjoy delicious gourmet meals from £34,99'
+        },
+        {
+            icon: bar,
+            name: 'Bar',
+            desc: 'Order a refreshing or hot drink from our bartenders.'
+        },
     ]
 
     return (

@@ -1,43 +1,81 @@
+@use 'src/vars.scss';
+
 .services-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: calc(100vh - 5rem);
     margin: 0 1rem;
+    padding-top: 5rem;
 
     .services-tiles-container {
         width: 100%;
 
         .services-tiles {
             display: grid; 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
             grid-auto-flow: dense;
 
+            // Trick to display the tiles as equal squares
+            &::before {
+                content: "";
+                width: 0;
+                padding-bottom: 100%;
+                display: block;
+                grid-row: 1 / 1;
+                grid-column: 1 / 1;
+              }
+        
+              & > *:first-child {
+                grid-row: 1 / 1;
+                grid-column: 1 / 1;
+              }
+            
             .services-tile {
+                position: relative;
                 display: flex;
                 flex-direction: column;
-                background: rgb(231, 231, 231);
+                background: vars.$mainColor;
                 border-radius: 10px;
                 padding: 0.5rem;
-                margin: 0.5rem;
+                margin: 0.75rem;
 
                 img {
                     align-self: center;
-                    height: 10vmax;
-                    width: 10vmax;
-                }
-            }
-            .services-tile-description {
-                grid-column: 1 / -1;
-                background: rgb(231, 231, 231);
-                border-radius: 10px;
-
-                &.open {
-                    margin: 0 0.5rem;
-                    padding: 0.5rem;
+                    height: 100%;
+                    width: 100%;
                 }
 
-                h2 {
-                    margin-top: 0;
+                &-arrow {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    bottom: -0.75rem;
+                    left: 50%;
+                    transform: translate(-50%);
+                    border-left: 0.75rem solid transparent;
+                    border-right: 0.75rem solid transparent;
+                    border-bottom: 0.75rem solid vars.$mainColor;
+                }
+
+                &-description {
+                    visibility: hidden;
+                    opacity: 0;
+                    grid-column: 1 / -1;
+                    grid-auto-rows: auto;
+                    background: vars.$mainColor;
+                    border-radius: 10px;
+                    transition: all 0.3s ease 0s, visibility 0s linear 0.3s;
+                    margin: 0 0.75rem;
+    
+                    &.open {
+                        padding: 0.5rem;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+    
+                    h2 {
+                        margin-top: 0;
+                    }
                 }
             }
         }
@@ -50,7 +88,7 @@
         .services-tiles-container {
 
             .services-tiles {
-                grid-template-columns: repeat(5, 1fr);
+                // grid-template-columns: repeat(5, 1fr);
             }
         }
     }
@@ -58,11 +96,23 @@
 
 @media screen and (min-width: 1200px) {
     .services-container {
+        flex-direction: row;
+
+        .services-text {
+            text-align: right;
+            order: 2;
+
+            h1 {
+                margin: 0;
+            }
+        }
 
         .services-tiles-container {
+            order: 1;
+            width: 80%;
 
             .services-tiles {
-                grid-template-columns: repeat(7, 1fr);
+                grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
             }
         }
     }

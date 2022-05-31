@@ -15,15 +15,21 @@ const Tile = ({ service, index }) => {
         <>
             <li ref={ref} className="services-tile" key={index} onClick={() => setShowServiceDesc(!showServiceDesc)}>
                 <img src={service.icon} alt="" />
-            </li>
-            <li className={`services-tile-description ${toggleClashCheck}`}>
                 {showServiceDesc &&
-                    <>
-                        <h2>{service.name}</h2>
-                        <p>{service.desc}</p>
-                    </>
+                    <div className="services-tile-arrow"></div>
                 }
             </li>
+            {/* Find a way to show an arrow above the description and below the tile */}
+            {showServiceDesc &&
+                <>
+                    <li className={`services-tile-description ${toggleClashCheck}`}>
+                            <>
+                                <h2>{service.name}</h2>
+                                <p>{service.desc}</p>
+                            </>
+                    </li>
+                </>
+            }
         </>
     )
 };
