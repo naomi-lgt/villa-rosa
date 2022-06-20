@@ -1,4 +1,5 @@
 .header-container {
+    z-index: 5;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -15,6 +16,10 @@
         justify-content: space-evenly;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
+
+        nav {
+            cursor: pointer;
+        }
     }
 }
 

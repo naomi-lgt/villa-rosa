@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 5rem);
-    margin: 0 1rem;
+    padding: 0 3%;
     padding-top: 5rem;
 
     .home-carousel-container {
@@ -38,5 +38,23 @@
 
         }
 
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .home-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .home-text {
+            max-width: 30rem;
+            // align-self: center;
+            margin-top: 10%;
+        }
+
+        .home-carousel-container {
+            justify-content: flex-start;
+            margin-top: 5%;
+        }
     }
 }

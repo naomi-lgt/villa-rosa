@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     height: calc(100vh - 5rem);
-    margin: 0 1rem;
+    padding: 0 3%;
     padding-top: 5rem;
 
     .services-tiles-container {
+        // z-index: -1;
         width: 100%;
 
         .services-tiles {
@@ -99,6 +100,7 @@
         flex-direction: row;
 
         .services-text {
+            margin-top: 5%;
             text-align: right;
             order: 2;
 
@@ -108,10 +110,12 @@
         }
 
         .services-tiles-container {
+            margin-top: 5%;
             order: 1;
             width: 80%;
 
             .services-tiles {
+                max-width: 50rem;
                 grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
             }
         }
