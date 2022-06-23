@@ -8,15 +8,40 @@
     .home-carousel-container {
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
-        justify-content: center;
+        align-content: center;
+        // justify-content: center;
 
         & .home-carousel {
-            flex-direction: row;
-            align-content: flex-end;
-            justify-content: center;
-            background: purple;
+            width: 100%;
+            align-self: center;
+            background: red;
+            // justify-content: center;
             margin-bottom: 3rem;
+
+            & > div {
+                width: 100%;
+                display: flex;
+                margin: 0;
+                // background: pink;
+                justify-content: center;
+
+                
+            }
+
+            .carousel {
+                width: 50%;
+            }
+
+            .card {
+                width: 200px;
+                height: 350px;
+                background: pink;
+            }
+
+            // ._xsi02 {
+            //     left: -20%;
+            //     // transform: translate(-50%)
+            // }
 
             .pic1 {
                 width: 200px;
@@ -53,7 +78,9 @@
         }
 
         .home-carousel-container {
-            justify-content: flex-start;
+            display: flex;
+            width: 50%;
+            // justify-content: center;
             margin-top: 5%;
         }
     }
