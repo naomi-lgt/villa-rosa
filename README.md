@@ -5,6 +5,8 @@
 
 Villa Rosa is a small project for a one page mock restaurant showcase website that I imagined. This straight forward project was made in **React** and was imagined as a way to promote a restaurant called Villa Rosa. The website is divided in three categories: Home, Services and Contact. It also uses a **SwiperJS** carousel and can be browsed with a header.
 
+### Check the website [here](https://villarosa.netlify.app)
+
 ![Size](https://github-size-badge.herokuapp.com/axel-lgt/museek.svg)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -26,6 +28,7 @@ In order to make this project, I used the following technologies:
 - JavaScript
 
 ## File hierarchy
+The wesbite was deployed on [Netlify](https://villarosa.netlify.app).
 
 ### Front-end
 In order to achieve my goal of making a one page website, I seperated each category (Home, Services and Contact) in a component with a height of 100vh. I also used a module called **React Scroll** to handle the header and the smooth scrolling to the categories.
