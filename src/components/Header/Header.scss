@@ -1,3 +1,5 @@
+@use 'src/vars';
+
 .header-container {
     z-index: 5;
     display: flex;
@@ -12,7 +14,7 @@
         max-width: 20rem;
         padding: 1rem;
         color: white;
-        background: rgba(0, 0, 0, 0.3);
+        background: vars.$accentColor;
         border-radius: 72px;
         justify-content: space-evenly;
         -webkit-backdrop-filter: blur(30px);

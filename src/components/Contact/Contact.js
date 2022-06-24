@@ -10,8 +10,8 @@ const Contact = () => {
             <div className="contact-info-container">
                 <div className="contact-info">
                     <h2>Opening hours</h2>
-                    <p><em>Monday - Friday:</em> 11h30 - 14h30 18h30 - 23h</p>
-                    <p><em>Saturday:</em> 11h30 - 23h</p>
+                    <p><em>Monday - Friday:</em> 11:30am - 2:30pm | 6:30pm - 11pm</p>
+                    <p><em>Saturday:</em> 11:30am - 11pm</p>
                     <h2>Telephone</h2>
                     <p>01632 960765</p>
                     <h2>Email</h2>

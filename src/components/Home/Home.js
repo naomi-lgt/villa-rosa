@@ -11,16 +11,16 @@ const Home = () => {
 
     const IMG_LIST = [
         {
-            src: "https://img.20mn.fr/ka7m0IiBTWG3w6-ffY4AOA/768x492_heritiere-star-telerealite-paris-hilton"
+            src: "https://images.unsplash.com/photo-1642933828502-4fe9bd2e8547?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJlc3RhdXJhbnQlMjBmYWNhZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
         },
         {
-            src: "https://resize-elle.ladmedia.fr/rcrop/1098,768/img/var/plain_site/storage/images/people/la-vie-des-people/news/paris-hilton-est-fiancee-3905673/94422388-1-fre-FR/Paris-Hilton-est-fiancee.jpg"
+            src: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
         },
         {
-            src: "https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/05/08/17/Chronique-C-est-la-vie-Paris-Hilton-le-business-du-moi.jpg?VersionId=LRbgACMAkTgvn1o4TM.V_YbWz5GJpWVR"
+            src: "https://images.unsplash.com/photo-1564759298141-cef86f51d4d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
         },
         {
-            src: "https://swiperjs.com/demos/images/nature-4.jpg"
+            src: "https://images.unsplash.com/photo-1564758866667-d0276ba73ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60"
         },
     ]
 
