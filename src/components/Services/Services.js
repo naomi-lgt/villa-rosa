@@ -78,7 +78,7 @@ const Services = () => {
             <div className="services-tiles-container">
                 <ul className="services-tiles">
                     {SERVICES_LIST.map((service, index) => 
-                        <Tile service={service} index={index} />
+                        <Tile service={service} key={index} />
                     )}
                 </ul>
             </div>

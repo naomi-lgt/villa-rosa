@@ -111,6 +111,22 @@
 }
 }
 
+@media screen and (min-width: 768px) {
+    .home-container {
+
+        .home-carousel-container {
+
+            .home-carousel {
+
+                .swiper {
+                    height: 400px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width:1200px) {
     .home-container {
         flex-direction: row;

@@ -9,6 +9,21 @@ import './Home.scss';
 const Home = () => {
     const homeRef = useRef("");
 
+    const IMG_LIST = [
+        {
+            src: "https://img.20mn.fr/ka7m0IiBTWG3w6-ffY4AOA/768x492_heritiere-star-telerealite-paris-hilton"
+        },
+        {
+            src: "https://resize-elle.ladmedia.fr/rcrop/1098,768/img/var/plain_site/storage/images/people/la-vie-des-people/news/paris-hilton-est-fiancee-3905673/94422388-1-fre-FR/Paris-Hilton-est-fiancee.jpg"
+        },
+        {
+            src: "https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/05/08/17/Chronique-C-est-la-vie-Paris-Hilton-le-business-du-moi.jpg?VersionId=LRbgACMAkTgvn1o4TM.V_YbWz5GJpWVR"
+        },
+        {
+            src: "https://swiperjs.com/demos/images/nature-4.jpg"
+        },
+    ]
+
     return (
         <div className="home-container" id="home" ref={homeRef}>
             <div className="home-text">
@@ -28,15 +43,13 @@ const Home = () => {
                     modules={[EffectCards, Autoplay]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    {IMG_LIST.map((img, index) => {
+                        return (
+                        <SwiperSlide key={index}>
+                            <img src={img.src} alt="" />
+                        </SwiperSlide>
+                        )
+                    })}
                 </Swiper>
                 </div>
             </div>
