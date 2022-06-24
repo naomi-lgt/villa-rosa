@@ -3,7 +3,7 @@
 .services-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
     padding: 0 3%;
     padding-top: 5rem;
 

@@ -1,22 +1,74 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 5rem);
+    height: 100vh;
+    // max-height: 100%;
     padding: 0 3%;
     padding-top: 5rem;
 
     .home-carousel-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-content: flex-end;
         justify-content: center;
+        height: 100%;
 
-        & .home-carousel {
-            flex-direction: row;
-            align-content: flex-end;
-            justify-content: center;
-            background: purple;
-            margin-bottom: 3rem;
+         .home-carousel {
+
+            .swiper {
+                width: 240px;
+                height: 320px;
+              }
+              
+              .swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 18px;
+                font-size: 22px;
+                font-weight: bold;
+                color: #fff;
+              }
+              
+              .swiper-slide:nth-child(1n) {
+                background-color: rgb(206, 17, 17);
+              }
+              
+              .swiper-slide:nth-child(2n) {
+                background-color: rgb(0, 140, 255);
+              }
+              
+              .swiper-slide:nth-child(3n) {
+                background-color: rgb(10, 184, 111);
+              }
+              
+              .swiper-slide:nth-child(4n) {
+                background-color: rgb(211, 122, 7);
+              }
+              
+              .swiper-slide:nth-child(5n) {
+                background-color: rgb(118, 163, 12);
+              }
+              
+              .swiper-slide:nth-child(6n) {
+                background-color: rgb(180, 10, 47);
+              }
+              
+              .swiper-slide:nth-child(7n) {
+                background-color: rgb(35, 99, 19);
+              }
+              
+              .swiper-slide:nth-child(8n) {
+                background-color: rgb(0, 68, 255);
+              }
+              
+              .swiper-slide:nth-child(9n) {
+                background-color: rgb(218, 12, 218);
+              }
+              
+              .swiper-slide:nth-child(10n) {
+                background-color: rgb(54, 94, 77);
+              }
 
             .pic1 {
                 width: 200px;
@@ -41,10 +93,27 @@
     }
 }
 
+@media screen and (max-width: 350px) {
+.home-container {
+
+    .home-carousel-container {
+
+        .home-carousel {
+
+            .swiper {
+                max-width: 60%;
+                height: 320px;
+            }
+
+        }
+    }
+
+}
+}
+
 @media screen and (min-width:1200px) {
     .home-container {
         flex-direction: row;
-        justify-content: space-between;
 
         .home-text {
             max-width: 30rem;
@@ -54,7 +123,9 @@
 
         .home-carousel-container {
             justify-content: flex-start;
+            align-items: flex-end;
             margin-top: 5%;
+            padding-right: 3%;
         }
     }
 }

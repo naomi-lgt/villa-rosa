@@ -1,13 +1,16 @@
 .contact-container {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 5rem); // Calculating this height to substract padding-top
+    height: 100vh; // Calculating this height to substract padding-top
     padding: 0 3%;
     padding-top: 5rem;
     justify-content: space-between;
 
-    .contact-info {
+    .contact-info-container {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -15,5 +18,14 @@
     .contact-container {
         flex-direction: row;
         justify-content: space-between;
+
+        .contact-text {
+            margin-top: 10%;
+        }
+
+        .contact-info-container {
+            justify-content: flex-start;
+            margin-top: 10%;
+        }
     } 
 }

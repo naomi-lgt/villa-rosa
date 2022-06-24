@@ -36,6 +36,34 @@ nav {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+  
+  span {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  em {
+    font-weight: 500;
+  }
+  
+  nav {
+    font-size: 1.05rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 4rem;
