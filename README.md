@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# :cook: Welcome to the Villa Rosa repository! :bouquet:
+🚀 Version 1.0 ([English](https://github.com/axel-lgt/villa-rosa/blob/master/README.md), [Français](https://github.com/axel-lgt/villa-rosa/blob/master/README.fr.md))
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://media.giphy.com/media/LVPILwcWdXs32Zq1vN/giphy.gif"></img></p>
 
-## Available Scripts
+Villa Rosa is a small project for a one page mock restaurant showcase website that I imagined. This straight forward project was made in **React** and was imagined as a way to promote a restaurant called Villa Rosa. The website is divided in three categories: Home, Services and Contact. It also uses a **SwiperJS** carousel and can be browsed with a header.
 
-In the project directory, you can run:
+![Size](https://github-size-badge.herokuapp.com/axel-lgt/museek.svg)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-### `npm start`
+## Technologies
+In order to make this project, I used the following technologies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Front-end
+- React
+- React Scroll
+- HTML
+- CSS
+- SASS
+- SwiperJS
+- JavaScript
 
-### `npm test`
+## File hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Front-end
+In order to achieve my goal of making a one page website, I seperated each category (Home, Services and Contact) in a component with a height of 100vh. I also used a module called **React Scroll** to handle the header and the smooth scrolling to the categories.
 
-### `npm run build`
+In the Home component, I used **SwiperJS** to create a stacked carousel with images I found on **Unsplash**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the Services component, I made a responsive grid with the restaurant's services icons. When an icon is clicked, a tab opens with the name and description of the service. Moreover, I made a custom hook in **useOutsideClick.js** to close the tab when another one is clicked or if the user clicks outside the grid.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out my work, bon appétit! :cook:
