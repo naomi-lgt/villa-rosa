@@ -19,7 +19,6 @@ const Tile = ({ service, index }) => {
                     <div className="services-tile-arrow"></div>
                 }
             </li>
-            {/* Find a way to show an arrow above the description and below the tile */}
             {showServiceDesc &&
                 <>
                     <li className={`services-tile-description ${toggleClashCheck}`}>
