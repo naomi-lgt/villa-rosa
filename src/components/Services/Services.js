@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Services.scss';
 import Tile from './Tile/Tile.js';
 import bar from '../../assets/bar.svg';
@@ -9,7 +8,7 @@ import chef from '../../assets/chef.svg';
 import delivery from '../../assets/delivery.svg';
 
 const Services = () => {
-    
+
     const SERVICES_LIST = [
         {
             icon: restaurant,
@@ -81,7 +80,7 @@ const Services = () => {
             </div>
             <div className="services-tiles-container">
                 <ul className="services-tiles">
-                    {SERVICES_LIST.map((service, index) => 
+                    {SERVICES_LIST.map((service, index) =>
                         <Tile service={service} key={index} />
                     )}
                 </ul>

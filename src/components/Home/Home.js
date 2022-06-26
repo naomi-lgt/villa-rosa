@@ -32,25 +32,25 @@ const Home = () => {
             </div>
             <div className="home-carousel-container">
                 <div className="home-carousel">
-                <Swiper
-                    effect={"cards"}
-                    loop={true}
-                    autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                    }}
-                    grabCursor={true}
-                    modules={[EffectCards, Autoplay]}
-                    className="mySwiper"
-                >
-                    {IMG_LIST.map((img, index) => {
-                        return (
-                        <SwiperSlide key={index}>
-                            <img src={img.src} alt="" />
-                        </SwiperSlide>
-                        )
-                    })}
-                </Swiper>
+                    <Swiper
+                        effect={"cards"}
+                        loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        grabCursor={true}
+                        modules={[EffectCards, Autoplay]}
+                        className="mySwiper"
+                    >
+                        {IMG_LIST.map((img, index) => {
+                            return (
+                                <SwiperSlide key={index}>
+                                    <img src={img.src} alt="" />
+                                </SwiperSlide>
+                            )
+                        })}
+                    </Swiper>
                 </div>
             </div>
         </div>

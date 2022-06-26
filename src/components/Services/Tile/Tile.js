@@ -22,10 +22,10 @@ const Tile = ({ service, index }) => {
             {showServiceDesc &&
                 <>
                     <li className={`services-tile-description ${toggleClashCheck}`}>
-                            <>
-                                <h2>{service.name}</h2>
-                                <p>{service.desc}</p>
-                            </>
+                        <>
+                            <h2>{service.name}</h2>
+                            <p>{service.desc}</p>
+                        </>
                     </li>
                 </>
             }

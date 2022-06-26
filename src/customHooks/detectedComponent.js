@@ -5,7 +5,7 @@ const detectedComponent = (ref, callback) => {
         if (ref.current && !ref.current.contains(e.target)) {
             // callback();
             console.log('in handleViewport');
-          }
+        }
     }
 
     useEffect(() => {

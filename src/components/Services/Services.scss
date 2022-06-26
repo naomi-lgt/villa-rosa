@@ -3,16 +3,15 @@
 .services-container {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 5rem);
+    min-height: 100vh;
     padding: 0 3%;
     padding-top: 5rem;
 
     .services-tiles-container {
-        // z-index: -1;
         width: 100%;
 
         .services-tiles {
-            display: grid; 
+            display: grid;
             grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
             grid-auto-flow: dense;
 
@@ -24,13 +23,13 @@
                 display: block;
                 grid-row: 1 / 1;
                 grid-column: 1 / 1;
-              }
-        
-              & > *:first-child {
+            }
+
+            &>*:first-child {
                 grid-row: 1 / 1;
                 grid-column: 1 / 1;
-              }
-            
+            }
+
             .services-tile {
                 position: relative;
                 display: flex;
@@ -67,13 +66,13 @@
                     border-radius: 10px;
                     transition: all 0.3s ease 0s, visibility 0s linear 0.3s;
                     margin: 0 0.75rem;
-    
+
                     &.open {
                         padding: 0.5rem;
                         visibility: visible;
                         opacity: 1;
                     }
-    
+
                     h2 {
                         margin-top: 0;
                     }
